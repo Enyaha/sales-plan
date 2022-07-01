@@ -1,0 +1,28 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+	height: 100vh;
+	background-color: #f1f1f1;
+}
+.container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+.show {
+	display: block;
+}
+.hide {
+	display:none;
+}
+
+@import 'blocks/header';
+@import 'blocks/tabs';
+@import 'blocks/indicators';
+@import 'blocks/charts';
+@import 'blocks/insert';
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>План продаж</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__info">
+                <h1 class="header__title">План продаж</h1>
+                <div class="header__block">
+                    <div class="header__days">
+                        <div>Текущий месяц:</div>
+                        <div class="header__month"></div>
+                    </div>
+                    <div class="header__days">
+                        <div>Всего дней:</div>
+                         <div class="header__total"></div>
+                    </div>
+                    <div class="header__days">
+                        <div>Прошло дней:</div>
+                        <div class="header__past"></div>
+                    </div>
+                    <div class="header__days">
+                        <div>Осталось дней:</div>
+                        <div class="header__remain"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="plan">
+        <div class="container">
+            <div class="tabs">
+                <div class="tabs__tab">
+                    <img src="icons/table.svg" alt="table" class="tabs__img">
+                </div>
+                <div class="tabs__tab">
+                    <img src="icons/chart-bar.svg" alt="chart" class="tabs__img">
+                </div>
+                <div class="tabs__tab">
+                    <img src="icons/users-alt.svg" alt="users" class="tabs__img">
+                </div>
+                <div class="tabs__marker"></div>
+            </div>
+        
+            <section class="indicators tabcontent show upward">
+                
+                <div class="indicators__block">
+                    <div class="indicators__header">
+                        <div class="indicators__header indicators_item">
+                            <button class="indicators__add">+</button>
+                        </div>
+                        <div class="indicators__header indicators_item blue">План</div>
+                        <div class="indicators__header indicators_item green">Факт</div>
+                        <div class="indicators__header indicators_item orange">Прогноз</div>
+                        <div class="indicators__header indicators_item red">План на день</div>
+                        <div class="indicators__header indicators_item blue">% План</div>
+                        <div class="indicators__header indicators_item green">% Факт</div>
+                        <div class="indicators__header indicators_item orange">% Прогноз</div>
+                    </div>
+                    <div class="indicators__department">
+                        <div class="indicators__department indicators_item right">
+                            <div class="indicators__name">Отдел</div>
+                            <div class="indicators__arrow">
+                                <img src="icons/angle-down.svg" alt="arrow" class="indicators__arrow_img">
+                            </div>
+                            <div class="indicators__edit">
+                                <img src="icons/pen.svg" alt="chart-bar" class="indicators__img">
+                                <img src="icons/check.svg" alt="check" class="indicators__img">
+                                <img src="icons/trash-alt.svg" alt="trash" class="indicators__img">
+                            </div>
+                        </div>
+                        <div class="indicators__department indicators_item blue">15 500 332 300</div>
+                        <div class="indicators__department indicators_item green"></div>
+                        <div class="indicators__department indicators_item orange"></div>
+                        <div class="indicators__department indicators_item red"></div>
+                        <div class="indicators__department indicators_item blue">100%</div>
+                        <div class="indicators__department indicators_item green"></div>
+                        <div class="indicators__department indicators_item orange"></div>
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="charts tabcontent hide upward">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus in quisquam possimus incidunt nulla exercitationem provident a, quasi qui, pariatur similique dolore! Quod officiis inventore impedit, laborum magnam incidunt praesentium!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum cumque eligendi quisquam repellat possimus mollitia unde voluptatem tempore eius, facilis dolorum, excepturi iusto, exercitationem qui debitis odio nihil esse?
+            </section>
+            <section class="insert tabcontent hide upward">
+                
+            </section>
+
+        </div>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
