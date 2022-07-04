@@ -123,12 +123,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const indicatorsBlock = document.querySelector('.indicators__block');
     
     const addUser = document.querySelector('.indicators__add');
+
+
     
     addUser.addEventListener('click', function() {
         let indicatorHtml = `
         <div class="indicators__department">
         <div class="indicators__department indicators_item right">
-        <div class="indicators__name">Отдел</div>
+        <div class="indicators__name"></div>
         <div class="indicators__arrow">
         <img src="icons/angle-down.svg" alt="arrow" class="indicators__arrow_img">
         </div>
@@ -138,7 +140,7 @@ window.addEventListener('DOMContentLoaded', () => {
         <img src="icons/trash-alt.svg" alt="trash" class="indicators__img">
         </div>
         </div>
-        <div class="indicators__department indicators_item blue">15 500 332 300</div>
+        <div class="indicators__department indicators_item blue"></div>
         <div class="indicators__department indicators_item green"></div>
         <div class="indicators__department indicators_item orange"></div>
         <div class="indicators__department indicators_item red"></div>
@@ -159,7 +161,8 @@ window.addEventListener('DOMContentLoaded', () => {
         const arrow = document.querySelectorAll('.indicators__arrow');
         const edit = document.querySelectorAll('.indicators__edit');
 
-        if (!event.target.classList.contains('indicators__arrow_img')) {
+        if (!event.target.classList.contains('indicators__arrow_img') &&
+            !event.target.classList.contains('indicators__img')) {
             [].forEach.call(arrow, function(elem) {
                 elem.classList.remove('arrow__active');
             });
@@ -169,13 +172,8 @@ window.addEventListener('DOMContentLoaded', () => {
             });
             
         } else if (event.target.classList.contains('indicators__arrow_img')) {
-            [].forEach.call(arrow, function(elem) {
-                elem.classList.toggle('arrow__active');
-            });
-
-            [].forEach.call(edit, function(elem) {
-                elem.classList.toggle('edit__active');
-            });
+            event.target.parentElement.classList.toggle('arrow__active');
+            event.target.parentElement.parentElement.children[2].classList.toggle('edit__active');
         }
     }); 
 

@@ -46,7 +46,7 @@
         height: 30px;
         background-color: #3a3939;
         img {
-            transition: all .5s;
+            transition: all .2s;
         }
         &:hover {
             cursor: pointer;
@@ -85,9 +85,10 @@
         width: 21px;
         height: 21px;
         background-color: #fff;
-        border-radius: 50%;
+        // border-radius: 50%;
         &:hover {
             cursor: pointer;
+            background-color: greenyellow;
         }
     }
     .edit__active {
